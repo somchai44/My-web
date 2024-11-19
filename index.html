@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Color Transition</title>
+<style>
+  /* ให้ body ครอบคลุมทั้งหน้าจอ */
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* กำหนดให้พื้นหลังเปลี่ยนสี */
+  body {
+    animation: colorChange 10s infinite alternate;
+  }
+
+  h1 {
+    font-size: 15vw; /* ขนาดแบบยืดหยุ่นตามหน้าจอ ให้ใหญ่ขึ้น */
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
+    margin-top: 20vh; /* กำหนดระยะห่างจากขอบบน */
+  }
+
+  h3 {
+    font-size: 3vw; /* ขนาดฟอนต์ที่เหมาะสม */
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    margin-top: 1vh; /* ระยะห่างจาก h1 */
+  }
+
+  /* การเปลี่ยนสี */
+  @keyframes colorChange {
+    0% { background-color: #FF5733; } /* สีเริ่มต้น */
+    25% { background-color: #33FF57; } /* สีที่สอง */
+    50% { background-color: #3357FF; } /* สีที่สาม */
+    75% { background-color: #FF33A1; } /* สีที่สี่ */
+    100% { background-color: #33FFF6; } /* สีสุดท้าย */
+  }
+</style>
+</head>
+
+<body>
+  <h1>
+    COMING SOON
+  </h1>
+  
+  <h3>I'm in the learning phase and will practice and complete this website.</h3>
+  <br>
+  <h3>أنا في مرحلة التعلم وسأتدرب على هذا الموقع وأكمله.</h3>
+</body>
+</html>
